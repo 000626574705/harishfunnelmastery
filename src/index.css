@@ -1,0 +1,62 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700;800;900&display=swap');
+html{
+  box-sizing: border-box;
+}
+
+body{
+  overflow-x:hidden ;
+}
+.buttonscale{
+  transition: transform 0.1s ease-in-out;
+  animation: shake 0.9s ease-out infinite;
+}
+
+.checkboxes{
+  font-size: 18px;
+  font-weight: 400;
+}
+.cd{
+  font-weight: 800;
+  font-size: 30px;
+}
+.myfoot{
+  font-size: xx-small;
+}
+.rr{
+  height: 28px;
+  width: 28px;
+}
+@media only screen and (min-width:1024px) {
+.videoset{
+  align-items: center;
+  justify-content: center;
+  justify-items: center;
+
+}}
+@media only screen and (max-width: 724px) {
+  .gb{
+  vertical-align: middle;}
+  .rr{
+    height: 12px;
+    width: 14px;
+  }
+  .videoset{
+    width:auto;
+   height:auto;
+  }
+
+}
+@keyframes shake {
+  0%, 100% {
+    transform: translateX(0);
+  }
+  25%, 75% {
+    transform: translateX(-10px);
+  }
+  50% {
+    transform: translateX(10px);
+  }}
